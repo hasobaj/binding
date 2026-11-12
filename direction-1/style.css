@@ -2,6 +2,7 @@
 --font-main: camera-plain;
 --font-secondary: camera-plain-med;
 --font-highlight: camera;
+--font-highlight-reg: camera-reg;
 
 --font-size-base:1.2rem;
 --font-size-sm: calc(var(--font-size-base)/2);
@@ -62,6 +63,11 @@
 	src: url('ABCCameraPlainTrial-Medium.otf') format('opentype');
 }
 
+@font-face{
+	font-family: 'camera-reg';
+	src: url('ABCCameraTrial-Regular.otf') format('opentype');
+}
+
 
 html{
 	font-family: var(--font-main);
@@ -77,24 +83,58 @@ body{
 h1{
 	font-family: var(--font-secondary);
 	font-size: var(--font-size-xl);
-	line-height: var(--spacing-lg);
+	line-height: calc(var(--spacing-base)*1.8);
 	padding-block: var(--spacing-md);
 	text-transform: uppercase;
+	text-align: center;
 	span{
 		font-family: var(--font-highlight);
 	}
 }
 
+nav {
+	margin-block-start: var(--font-size-xl);
+
+	li{
+		padding: var(--font-size-sm);
+		text-transform: uppercase;
+		border: white solid 0.05rem;
+		border-radius: 2rem;
+		color: white;
+		background-color: var(--color-main);
+		text-align: center;
+
+		a{
+			text-decoration: none;
+		}
+}
+}
 
 h2{
-	font-family: var(--font-secondary);
+	font-family: var(--font-highlight);
 	text-transform: uppercase;
-	font-size: var(--font-size-lg);
-	line-height: var(--spacing-lg);
+	font-size: var(--font-size-xl);
+	line-height: calc(var(--spacing-base)*1.5);
 }
 
 section{
 	margin-block-start: var(--spacing-xxl);
+}
+
+summary{
+	background-color: black;
+	margin-block: var(--spacing-lg);
+	margin-inline: -1cap;
+	display: flex;
+	justify-content: center;
+}
+
+strong{
+	background-color: white;
+	margin: var(--spacing-sm);
+	padding-inline: var(--spacing-lg);
+	padding-block: var(--spacing-md);
+	border-radius: 2rem;
 }
 
 p{
@@ -102,8 +142,16 @@ p{
 }
 
 blockquote{
-	border-inline-start: 0.8rem solid black;
+	border-inline-start: 0.4rem solid black;
+	border-radius: 0.4rem;
 	padding-inline: var(--spacing-md);
 }
 
+a{
+	text-decoration: underline;
+}
+
+em{
+	font-family: var(--font-highlight);
+}
 
