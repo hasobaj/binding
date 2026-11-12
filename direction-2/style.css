@@ -136,7 +136,7 @@ h2::before{
 	margin-inline-end: var(--font-size-md);
 	font-size: var(--font-size-lg);
 	padding-block: var(--spacing-sm);
-	padding-inline: var(--spacing-lg);
+	padding-inline: var(--spacing-md);
 	text-align: center;
 	border-radius: 50px;
 }
