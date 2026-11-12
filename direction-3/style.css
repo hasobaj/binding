@@ -5,7 +5,7 @@
 --font-size-base:1.2rem;
 --font-size-sm: calc(var(--font-size-base)/2);
 --font-size-md: var(--font-size-base);
---font-size-lg: calc(var(--font-size-base)*1.5);
+--font-size-lg: calc(var(--font-size-base)*1.6);
 --font-size-xl: calc(var(--font-size-base)*2.5);
 
 --spacing-base: 1cap;
@@ -77,6 +77,10 @@ nav{
 		&:last-child {
 			border-block-end: black solid 0.1rem;
 		}
+
+		a{
+			text-decoration: none;
+		}
 	}
 }
 
@@ -106,6 +110,23 @@ p{
 }
 
 strong{
-	font-weight: 800;
-	/* background-color: var(--color-highlight); */
+	background-color: var(--color-highlight);
+}
+
+em{
+	font-weight: 900;
+}
+
+a{
+	text-decoration: underline;
+	text-decoration-color: black;
+	text-decoration-thickness: 0.1em;
+}
+
+footer{
+	background-color: var(--color-highlight);
+	margin-inline: -1cap;
+	margin-block-start: var(--spacing-xxl);
+	border-block-start: black solid 0.1rem;
+	padding: var(--spacing-md);
 }
