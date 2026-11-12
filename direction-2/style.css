@@ -5,7 +5,7 @@
 --font-size-base:1.2rem;
 --font-size-sm: calc(var(--font-size-base)/2);
 --font-size-md: var(--font-size-base);
---font-size-lg: calc(var(--font-size-base)*1.4);
+--font-size-lg: calc(var(--font-size-base)*1.2);
 --font-size-xl: calc(var(--font-size-base)*3);
 
 --spacing-base: 1cap;
