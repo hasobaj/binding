@@ -121,15 +121,16 @@ section{
 	margin-block-start: var(--spacing-xxl);
 }
 
-summary{
+summary, div{
 	background-color: black;
 	margin-block: var(--spacing-lg);
 	margin-inline: -1cap;
+	padding-inline: var(--font-size-md);
 	display: flex;
 	justify-content: center;
 }
 
-strong{
+strong, div p{
 	background-color: white;
 	margin: var(--spacing-sm);
 	padding-inline: var(--spacing-lg);
