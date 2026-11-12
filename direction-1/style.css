@@ -1,6 +1,7 @@
 :root{
---font-main: Lato;
---font-secondary: gt-walsheim-ultra;
+--font-main: camera-plain;
+--font-secondary: camera-plain-med;
+--font-highlight: camera;
 
 --font-size-base:1.2rem;
 --font-size-sm: calc(var(--font-size-base)/2);
@@ -26,6 +27,41 @@
 	font-family: 'gt-walsheim-ultra';
 	src: url('GT-Walsheim-Ultra-Bold-Trial.otf') format('opentype');
 }
+@font-face{
+	font-family: 'gt-alpina-bold';
+	src: url('GT-Alpina-Standard-Bold-Trial.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'gt-walsheim-con-black';
+	src: url('GT-Walsheim-Condensed-Black-Trial.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'asphalt-light';
+	src: url('ABCAsfaltTrial-Light.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'asphalt-con-med';
+	src: url('ABCAsfaltCondensedTrial-Medium.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'camera-plain';
+	src: url('ABCCameraPlainTrial-Regular.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'camera';
+	src: url('ABCCameraTrial-Medium.otf') format('opentype');
+}
+
+@font-face{
+	font-family: 'camera-plain-med';
+	src: url('ABCCameraPlainTrial-Medium.otf') format('opentype');
+}
+
 
 html{
 	font-family: var(--font-main);
@@ -44,10 +80,8 @@ h1{
 	line-height: var(--spacing-lg);
 	padding-block: var(--spacing-md);
 	text-transform: uppercase;
-	text-align: center;
 	span{
-		color: transparent;
-		-webkit-text-stroke: 2px black;
+		font-family: var(--font-highlight);
 	}
 }
 
