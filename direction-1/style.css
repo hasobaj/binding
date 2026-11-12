@@ -1,6 +1,6 @@
 :root{
 --font-main: Lato;
---font-secondary: Reenie Beanie;
+--font-secondary: gt-walsheim-ultra;
 
 --font-size-base:1.2rem;
 --font-size-sm: calc(var(--font-size-base)/2);
@@ -15,9 +15,16 @@
 --spacing-xxl: calc(var(--spacing-base)*4);
 
 
---color-main: rgb(5, 45, 22);
+/* --color-main: rgb(5, 45, 22);
+--color-secondary: rgb(61, 252, 153); */
+--color-main: rgb(0, 1, 0);
 --color-secondary: rgb(61, 252, 153);
 
+}
+
+@font-face{
+	font-family: 'gt-walsheim-ultra';
+	src: url('GT-Walsheim-Ultra-Bold-Trial.otf') format('opentype');
 }
 
 html{
@@ -28,11 +35,11 @@ html{
 }
 
 body{
-	background-color: var(--color-main);
-	color: var(--color-secondary);
+	color: var(--color-main);
 }
 
 h1{
+	font-family: var(--font-secondary);
 	font-size: var(--font-size-xl);
 	line-height: var(--spacing-lg);
 	padding-block: var(--spacing-lg);
