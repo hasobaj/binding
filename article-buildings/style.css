@@ -54,10 +54,6 @@ body{
 	color: var(--color-main);
 }
 
-section{
-	margin-block-start: var(--spacing-xxxl);
-}
-
 h1{
 	font-family: var(--font-secondary);
 	font-size: var(--font-size-xl);
@@ -92,7 +88,7 @@ h2{
 	font-family: var(--font-highlight);
 	text-transform: uppercase;
 	font-size: var(--font-size-lg);
-	/* line-height: var(--spacing-lg); */
+	line-height: var(--spacing-md);
 }
 
 p{
@@ -126,3 +122,32 @@ a{
 	text-decoration: underline;
 }
 
+/* page stuff now, done with components */
+
+/* atom */
+.title {
+	/* what is the base styling for a title without spacing */
+}
+
+.callout {
+	some border
+	some color
+	a lil padding, but no margin
+}
+
+/* components */
+.main-heading {
+	.title {
+		margin-block: x
+	}
+}
+
+.base-section {
+	.callout {
+		margin-block
+	}
+}
+
+main > * + * {
+	margin-block-start: var(--spacing-xxxl);
+}
