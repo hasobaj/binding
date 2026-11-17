@@ -95,6 +95,10 @@ h2{
 	/* line-height: var(--spacing-lg); */
 }
 
+p{
+	margin-block-start: var(--spacing-lg);
+}
+
 summary, div{
 	background-color: var(--color-main);
 	margin-block: var(--spacing-lg);
@@ -110,10 +114,6 @@ strong, div p{
 	padding-inline: var(--spacing-lg);
 	padding-block: var(--spacing-md);
 	border-radius: 2rem;
-}
-
-p{
-	margin-block-start: var(--spacing-lg);
 }
 
 blockquote{
