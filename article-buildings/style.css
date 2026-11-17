@@ -24,22 +24,22 @@
 
 @font-face{
 	font-family: 'camera-plain';
-	src: url('ABCCameraPlainTrial-Regular.otf') format('opentype');
+	src: url('./fonts/ABCCameraPlainTrial-Regular.otf') format('opentype');
 }
 
 @font-face{
 	font-family: 'camera-plain-med';
-	src: url('ABCCameraPlainTrial-Medium.otf') format('opentype');
+	src: url('./fonts/ABCCameraPlainTrial-Medium.otf') format('opentype');
 }
 
 @font-face{
 	font-family: 'camera-reg';
-	src: url('ABCCameraTrial-Regular.otf') format('opentype');
+	src: url('./fonts/ABCCameraTrial-Regular.otf') format('opentype');
 }
 
 @font-face{
 	font-family: 'camera';
-	src: url('ABCCameraTrial-Medium.otf') format('opentype');
+	src: url('./fonts/ABCCameraTrial-Medium.otf') format('opentype');
 }
 
 
