@@ -1,4 +1,8 @@
 :root{
+--color-main: black;
+--color-secondary: white;
+--color-brand: rgb(26, 92, 248);
+
 --font-main: camera-plain;
 --font-secondary: camera-plain-med;
 --font-highlight: camera;
@@ -7,21 +11,15 @@
 --font-size-base:1.2rem;
 --font-size-sm: calc(var(--font-size-base)/2);
 --font-size-md: var(--font-size-base);
---font-size-lg: calc(var(--font-size-base)*1.5);
+--font-size-lg: calc(var(--font-size-base)*2.2);
 --font-size-xl: calc(var(--font-size-base)*2.5);
 
 --spacing-base: 1cap;
 --spacing-md: var(--spacing-base);
---spacing-lg: calc(var(--spacing-base)*2);
+--spacing-lg: calc(var(--spacing-base)*1.8);
 --spacing-xl: calc(var(--spacing-base)*2.5);
 --spacing-xxl: calc(var(--spacing-base)*7);
-
-
-/* --color-main: rgb(5, 45, 22);
---color-secondary: rgb(61, 252, 153); */
---color-main: rgb(0, 1, 0);
---color-secondary: rgb(61, 252, 153);
-
+--spacing-xxxl: calc(var(--spacing-base)*10);
 }
 
 @font-face{
@@ -56,11 +54,15 @@ body{
 	color: var(--color-main);
 }
 
+section{
+	margin-block-start: var(--spacing-xxxl);
+}
+
 h1{
 	font-family: var(--font-secondary);
 	font-size: var(--font-size-xl);
-	line-height: calc(var(--spacing-base)*1.8);
-	padding-block: var(--spacing-md);
+	line-height: var(--spacing-lg);
+	margin-block: var(--spacing-xl);
 	text-transform: uppercase;
 	text-align: center;
 	span{
@@ -74,31 +76,27 @@ nav {
 	li{
 		padding: var(--font-size-sm);
 		text-transform: uppercase;
-		border: white solid 0.05rem;
+		border: var(--color-secondary) solid 0.05rem;
 		border-radius: 2rem;
-		color: white;
+		color: var(--color-secondary);
 		background-color: var(--color-main);
 		text-align: center;
 
 		a{
 			text-decoration: none;
 		}
-}
+	}
 }
 
 h2{
 	font-family: var(--font-highlight);
 	text-transform: uppercase;
-	font-size: var(--font-size-xl);
-	line-height: calc(var(--spacing-base)*1.5);
-}
-
-section{
-	margin-block-start: var(--spacing-xxl);
+	font-size: var(--font-size-lg);
+	/* line-height: var(--spacing-lg); */
 }
 
 summary, div{
-	background-color: black;
+	background-color: var(--color-main);
 	margin-block: var(--spacing-lg);
 	margin-inline: -1cap;
 	padding-inline: var(--font-size-md);
@@ -107,7 +105,7 @@ summary, div{
 }
 
 strong, div p{
-	background-color: white;
+	background-color:var(--color-secondary);
 	margin: var(--spacing-sm);
 	padding-inline: var(--spacing-lg);
 	padding-block: var(--spacing-md);
@@ -119,7 +117,7 @@ p{
 }
 
 blockquote{
-	border-inline-start: 0.4rem solid black;
+	border-inline-start: 0.4rem solid var(--color-main);
 	border-radius: 0.4rem;
 	padding-inline: var(--spacing-md);
 }
