@@ -64,14 +64,18 @@ header{
 }
 hgroup{
 	position: sticky;
+	top: 15vh;
 	align-items: center;
+	/* text-align: center; */
 }
 
 h1{
 	font-family: var(--font-highlight);
 	font-size: var(--font-size-xxl);
 	line-height: var(--spacing-lg);
+	/* margin-block: var(--spacing-md); */
 	text-transform: uppercase;
+	/* text-align: center; */
 	span{
 		font-family: var(--font-highlight);
 	}
