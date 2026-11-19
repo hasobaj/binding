@@ -49,6 +49,7 @@ html{
 	font-size: var(--font-size-base);
 	line-height: var(--spacing-xl);
 	padding-inline: var(--spacing-xl);
+	cursor: url("./img/circle.png");
 }
 
 body{
@@ -94,7 +95,7 @@ nav {
 		border: var(--color-main) solid 0.2rem;
 		box-sizing: border-box;
 		/* border: var(--color-secondary) solid 0.05rem; */
-		border-radius: 2rem;
+		border-radius: 99rem;
 		font-size: var(--font-size-xl);
 		color: var(--color-secondary);
 		background-color: var(--color-main);
