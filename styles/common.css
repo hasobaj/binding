@@ -48,7 +48,7 @@ html{
 	font-family: var(--font-main);
 	font-size: var(--font-size-base);
 	line-height: var(--spacing-xl);
-	padding: var(--spacing-xl);
+	padding-inline: var(--spacing-xl);
 }
 
 body{
@@ -70,7 +70,7 @@ hgroup{
 }
 
 h1{
-	font-family: var(--font-highlight);
+	font-family: var(--font-main);
 	font-size: var(--font-size-xxl);
 	line-height: var(--spacing-lg);
 	/* margin-block: var(--spacing-md); */
